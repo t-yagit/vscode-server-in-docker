@@ -6,3 +6,13 @@ services:
       - "8000:8000"
     privileged: true
     restart: always
+    volumes:
+      - type: volume
+        source: vscode-cli
+        target: /root/.vscode-cli
+      - type: volume
+        source: vscode-server
+        target: /root/.vscode-server
+volumes:
+  vscode-cli:
+  vscode-server:
