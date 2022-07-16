@@ -1,7 +1,8 @@
-version: "3"
+version: "3.8"
 services:
   vscode:
     build: "."
     ports:
       - "8000:8000"
     privileged: true
+    restart: always
